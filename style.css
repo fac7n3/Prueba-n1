@@ -1,0 +1,50 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 300px 300px;
+  gap: 45px;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  justify-self: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(42, 126, 165);
+  box-shadow: 0px 0px 110px rgba(79, 159, 206, 0.671);
+}
+
+.nene {
+  color: rgb(42, 126, 165);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: larger;
+}
+.productos {
+  background-color: rgb(42, 126, 165);
+  height: auto;
+  width: 300px;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 0px 110px rgba(79, 159, 206, 0.671);
+  justify-items: center;
+}
+
+img {
+  height: 100px;
+  width: 170px;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0px 0px 19px rgba(255, 255, 255, 0.671);
+}
+
+button {
+  background-color: rgb(91, 152, 180);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
