@@ -78,5 +78,6 @@ select {
 .imagencowork {
   height: 100%;
   width: 93.5%;
-  
+  object-fit: cover;
   border-radius: 20px;
+}
