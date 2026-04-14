@@ -1,0 +1,17 @@
+.margin {
+  background-color: aqua;
+}
+
+.margen {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-right: 380px;
+}
+.image {
+  width: 224px;
+  height: 28px;
+  object-fit: cover;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
