@@ -1,20 +1,45 @@
-//alert("faculo y bianigga");
+function hacerIngreso() {
+    const edadUsuario = Number(document.getElementById("edad").value);
+    const mensajeDiv = document.getElementById("mensaje");
+    
+    if (isNaN(edadUsuario) || edadUsuario < 1) {
+        mostrarMensaje("Por favor, ingrese una edad válida.", "error");
+        return;
+    }
 
-//existen 3 tipos de variables: const, var y let
-//var es una variable global, let es una variable local, const es una variable constante, no se puede modificar su valor
-//var nombre = "faculo y bianigga";
-//let apellido = "y bianigga";
-// ; no es obligatorio, pero es una buena práctica para separar las instrucciones
+    if (edadUsuario < 18) {
+        mostrarMensaje("Lo siento, no puedes hacer el ingreso al banco porque eres menor de edad.", "error");
+        return;
+    }
 
-const dni = "12.345.678";
-let edad =18;
+    if (edadUsuario > 100) {
+        mostrarMensaje("Por favor, ingrese una edad válida (menor a 100).", "error");
+        return;
+    }
 
-//dni = "anashe"; //esto no se puede hacer porque dni es una constante
+    const nombreUsuario = document.getElementById("nombre").value.trim();
+    
+    if (nombreUsuario.length < 3) {
+        mostrarMensaje("El nombre debe tener al menos 3 caracteres.", "error");
+        return;
+    }
 
-console.log(edad); //esto muestra el valor de la variable edad en la consola del navegador
+    const apellidoUsuario = document.getElementById("apellido").value.trim();
+    const emailUsuario = document.getElementById("email").value.trim();
+    const dniUsuario = document.getElementById("dni").value.trim();
 
-prompt("ingrese el nombre de usuario"); //esto muestra un cuadro de diálogo para ingresar un valor, el valor ingresado se guarda en una variable
+    if (dniUsuario.length !== 10) {
+        mostrarMensaje("El DNI debe tener 10 caracteres.", "error");
+        return;
+    }
 
-const nombreUsuario = prompt("ingrese el nombre de usuario"); //esto muestra un cuadro de diálogo para ingresar un valor, el valor ingresado se guarda en la variable nombreUsuario 
-alert("Hola," + " " + nombreUsuario); //esto muestra un cuadro de diálogo con el valor de la variable nombreUsuario pero los concatena pq son 2 strings, el resultado es "Hola, faculo y bianigga" si el usuario ingresa "faculo y bianigga" como nombre de usuario
+    mostrarMensaje("Bienvenido al banco, " + nombreUsuario + "! Tu edad es: " + edadUsuario, "success");
+}
+
+function mostrarMensaje(texto, tipo) {
+    const mensajeDiv = document.getElementById("mensaje");
+    mensajeDiv.textContent = texto;
+    mensajeDiv.className = tipo;
+    mensajeDiv.style.display = "block";
+}
 

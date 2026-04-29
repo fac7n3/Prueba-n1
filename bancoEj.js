@@ -2,7 +2,6 @@
 //hacer un ingreso a un bnaco : piediendo dni, nombre, apellido,email,edad (si la edad es menor a 18, no se puede hacer el ingreso) y mostrar un mensaje de bienvenida con el nombre del usuario y su edad
 //hacer un ingreso a un bnaco : piediendo dni, nombre, apellido,email,edad (si la edad es menor a 18, no se puede hacer el ingreso) y mostrar un mensaje de bienvenida con el nombre del usuario y su edad
 
-
 const edadUsuario = Number(prompt("Ingrese su edad:"));
 
 
@@ -29,4 +28,4 @@ if (edadUsuario >= 18 && edadUsuario <= 100)
  else {
         alert("Lo siento, no puedes hacer el ingreso al banco porque eres menor de edad.");
 
-}
+ }
