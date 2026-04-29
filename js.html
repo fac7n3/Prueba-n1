@@ -2,43 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso al Banco</title>
-    <style>
-      
-    </style>
 </head>
-<body>
-    <h1>Ingreso al Banco</h1>
-    
-    <div class="form-group">
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" placeholder="Ingrese su edad">
-    </div>
+<body class="bg-slate-100 text-slate-900 min-h-screen flex items-center justify-center py-10">
+    <main class="w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-slate-200 p-8">
+        <h1 class="text-3xl font-semibold text-center text-sky-700 mb-8">Ingreso al Banco</h1>
 
-    <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-    </div>
+        <div class="space-y-5">
+            <div class="space-y-2">
+                <label for="edad" class="block text-sm font-medium text-slate-700">Edad</label>
+                <input type="number" id="edad" placeholder="Ingrese su edad" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none" />
+            </div>
 
-    <div class="form-group">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" placeholder="Ingrese su apellido">
-    </div>
+            <div class="space-y-2">
+                <label for="nombre" class="block text-sm font-medium text-slate-700">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none" />
+            </div>
 
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Ingrese su email">
-    </div>
+            <div class="space-y-2">
+                <label for="apellido" class="block text-sm font-medium text-slate-700">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none" />
+            </div>
 
-    <div class="form-group">
-        <label for="dni">DNI:</label>
-        <input type="text" id="dni" placeholder="Ingrese su DNI (10 caracteres)">
-    </div>
+            <div class="space-y-2">
+                <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                <input type="email" id="email" placeholder="Ingrese su email" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none" />
+            </div>
 
-    <button onclick="hacerIngreso()">Ingresar</button>
+            <div class="space-y-2">
+                <label for="dni" class="block text-sm font-medium text-slate-700">DNI</label>
+                <input type="text" id="dni" placeholder="Ingrese su DNI (10 caracteres)" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-sky-500 focus:ring-2 focus:ring-sky-100 outline-none" />
+            </div>
 
-    <div id="mensaje"></div>
+            <button onclick="hacerIngreso()" class="w-full rounded-2xl bg-sky-600 text-white font-semibold py-3 hover:bg-sky-700 transition-colors">Ingresar</button>
+
+            <div id="mensaje" class="text-center text-sm text-slate-600"></div>
+        </div>
+    </main>
 
     <script src="./main.js"></script>
 </body>
