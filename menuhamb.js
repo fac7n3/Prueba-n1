@@ -1,0 +1,1 @@
+const menudiv = document.getElementById("menudiv");
