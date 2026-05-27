@@ -1,0 +1,210 @@
+body{
+    background-color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+background: rgba(20, 20, 20, 0.75);
+color: #f7f7f7;
+justify-content: space-between;
+display: flex;
+border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+}
+
+.carrito{
+display: flex;
+}
+
+.contenido-carrito{
+margin-left: 20px;
+background: #f4c542;
+color: #1f1f1f;
+border-radius: 30px;
+height: 30px;
+width: 30px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.conteiner{
+    background: transparent;
+    width: 810px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    color: #222;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.label1{
+    color: #a86f00;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
+.label2{
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    color: #111;
+}
+
+.label3{
+    font-size: 14px;
+    color: #666;
+    margin: 8px 0 0 0;
+    line-height: 1.6;
+}
+
+.label4{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 12px 0 0 0;
+    color: #111;
+}
+
+button{
+    padding: 12px 18px;
+    background: #f4c542;
+    color: #1f1f1f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 180px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 0;
+    padding: 20px;
+}
+
+.imagenepica{
+    width: 50%;
+    min-width: 280px;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center;
+    background-size: cover;
+        border-radius: 10px 0px 0px 10px;
+
+}
+
+.data{
+    flex: 1;
+    
+}
+
+.conteiner{
+    background: transparent;
+    width: 760px;
+    height: 430px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+    color: #222;
+    display: flex;
+    align-items: stretch;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+nav{
+    padding: 20px 36px;
+    align-items: center;
+}
+
+nav .titulo h2,
+nav .carrito h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav .carrito{
+    gap: 14px;
+    align-items: center;
+}
+
+
+
+.data{
+    width: 52%;
+    background: #ffffff;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.label1{
+    color: #a86f00;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.label2{
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0;
+    color: #111;
+    line-height: 1.05;
+}
+
+.label3{
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+    max-width: 90%;
+}
+
+.label4{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    color: #111;
+}
+
+button{
+    padding: 14px 20px;
+    background: #f4c542;
+    color: #111;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 700;
+}
+
+button:hover{
+    opacity: 0.95;
+}
+
+@media (max-width: 840px){
+    .conteiner{width: 92%; height: auto; flex-direction: column;}
+    .imagenepica{width: 100%; height: 260px; min-width: auto;}
+    .data{width: 100%; padding: 24px;}
+}
+
+@media (max-width: 520px){
+    .data{padding: 20px;}
+    .label2{font-size: 24px;}
+    .label4{font-size: 20px;}
+    button{width: 100%;}
+}
